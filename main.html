@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Turn Light</title>
+</head>
+<body>
+ <h1>Light Turn On Off By JavaScript</h1>
+ <button id ="b-1"onclick="document.getElementById('myImage').src='img/turn_on.jpg'">
+ 	Turn On
+ </button>
+ <img id ="myImage" src="img/idea-bulb-turn-off-7354247.jpg" style="width:100%">
+ <button id ="b-2" onclick="document.getElementById('myImage').src='img/idea-bulb-turn-off-7354247.jpg'" >
+ 	Turn Off
+ </button>
+ 	<h2>Light Condition</h2>
+ 	<p id="p1">Off</p>
+ 	<button id="btn-2" type="button" onclick="multiply(5,4)">Mul</button>
+ 	<button type="button" onclick="funtion1()">
+ 		Update
+ 	</button>
+ 	<script type="text/javascript">
+ 		function funtion1()
+ 		{   
+ 			document.getElementById("p1").innerHTML="On";
+ 		}
+ 		function multiply(p1,p2)
+ 		{
+			document.write(p1*p2);		
+		}
+
+	</script>
+	<br>
+	<p>
+		<h1>Farenhite To Celcious Converter </h1>
+	</p>
+	<script>
+		function toCelcius(f)
+		{   
+			document.write(f+"="+"<br>");
+			return (5/9)*(f-32);
+		}
+
+		document.write(toCelcius(1000));
+ 	</script>
+ 	<h2 id="demo_1">Object </h2>
+ 	<script type="text/javascript">
+ 		//object in JavaScript
+ 		const car ={
+ 			type:"Fiat",
+ 			model:"500",
+ 			color:"white",
+ 			obj:function()
+ 		{
+ 			return this.type+" "+this.model+" "+this.color;
+ 		}
+
+ 		};
+ 		document.write("<br>");
+ 		document.write("<h3>Car : </h3>");
+ 		document.write(car.obj());
+ 		alert(car.obj()); 
+ 	</script>
+ 	<h2>Today Date</h2>
+ 	<h3 id="date"></h3>
+ 	<button onclick="document.getElementById('date').innerHTML=Date()">
+ 		Today Date
+ 	</button>
+ 	<h2>Array Example</h2>
+ 	<p id="array-1"></p>
+ 	<script type="text/javascript" src="array-1.js"></script>
+ 	<input type="#" id ="f_in" value="18">
+ 	<button onclick="myFunction()">Try It</button>
+ 	<p id="demo11"></p>
+ 	<script type="text/javascript" src="jsfile2.js"></script>
+ 	<h2>Map in Javascript</h2>
+ 	<p id="map"> </p>
+ 	<script type="text/javascript" src="map.js"></script>
+ 	<h3>Javascript Error</h3>
+ 	<h6>Plz Input a number : </h6>
+ 	<input type="text" id="inpt-err" name="">
+ 	<button type="button" onclick="myFunction2()">Test</button>
+ 	<p id="poo1"></p>
+ 	<p id="p01"></p>
+ 	<script type="text/javascript" src="jsfile2.js"></script>
+ 	<h3>Hoisting in Javascript</h3>
+ 	<p id="p02"></p>
+ 	<script type="text/javascript" src="hoisting.js"></script>
+ 	<h3>Arrow Function</h3>
+ 	<p>let myAFunction = (a,b) => a*b;<br>
+document.getElementById("a-func").innerHTML =
+ myAFunction(4,5);</p>
+ 		 	<p id="a-func"></p>
+ 	 	<script type="text/javascript" src="arrowFunction.js"></script>
+
+</body>
+</html>
